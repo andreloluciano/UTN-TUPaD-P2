@@ -13,12 +13,10 @@ final.*/
 public class Ej08precioFinal {
 
     // funcion que calcula el precio final
-    public static double calcularPrecioFinal(double precioBase, double impuesto, double descuento) {
+     static double calcularPrecioFinal(double precioBase, double impuesto, double descuento) {
         double impuestoDecimal = impuesto / 100;
         double descuentoDecimal = descuento / 100; // convierte el descuento o impuesto a decimal (10 a 0.10 o 0.05)
-
         double resultado = precioBase + (precioBase * impuestoDecimal) - (precioBase * descuentoDecimal);
-
         return resultado; // devuelve el precio final
     }
 

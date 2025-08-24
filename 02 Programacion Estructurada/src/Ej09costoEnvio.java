@@ -15,9 +15,9 @@ public class Ej09costoEnvio {
 
     // funciones
     // a) Costo de envío segun zona y peso
-    public static double calcularCostoEnvio(double peso, String zona) {
-        double tarifaNacional = 5.0;
-        double tarifaInternacional = 10.0;
+   static double calcularCostoEnvio(double peso, String zona) {
+        double tarifaNacional = 5;
+        double tarifaInternacional = 10;
 
         if (zona.equalsIgnoreCase("Nacional")) {
             return peso * tarifaNacional;
@@ -30,7 +30,7 @@ public class Ej09costoEnvio {
     }
 
     // b) producto + envío
-    public static double calcularTotalCompra(double precioProducto, double costoEnvio) {
+    static double calcularTotalCompra(double precioProducto, double costoEnvio) {
         return precioProducto + costoEnvio;
     }
 
