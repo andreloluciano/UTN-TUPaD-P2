@@ -1,0 +1,13 @@
+# Archivos de IntelliJ
+.idea/
+*.iml
+
+# Carpetas de compilación
+out/
+bin/
+build/
+target/
+
+# Archivos generados
+*.class
+*.log
