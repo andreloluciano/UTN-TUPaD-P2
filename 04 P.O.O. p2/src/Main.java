@@ -1,4 +1,5 @@
 import packageUTN2.Empleado;
+import packageUTN2.Libro;
 
 import static packageUTN2.Empleado.mostrarTotalEmpleados;
 
@@ -22,6 +23,22 @@ public class Main {
 
         System.out.println(e1);
         System.out.println((e2));
+
+        System.out.println("_____________________________________________");
+
+    Libro l1 = new Libro("Señor Anillos", "Tolkien");
+        System.out.println(l1.getTitulo() + " " + l1.getAutor() + " " + Libro.getEditorial() );
+    Libro l2 = new Libro("Harry Potter", "Samuel", "Wizzards");
+        System.out.println(l2.getTitulo() + " " + l2.getAutor() + " " + Libro.getEditorial() );
+
+    l1.actualizarTitulo("El Señor de los Anillos");
+        System.out.println(l1.getTitulo());
+
+        System.out.println(l1);
+        System.out.println(l2);
+
+        System.out.println("_____________________________________________");
+
 
     }
 }
